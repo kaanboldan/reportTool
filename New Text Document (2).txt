@@ -1,0 +1,42 @@
+mkdir test_results
+
+cd test_results
+
+touch deneme.txt
+
+echo "0" > deneme.txt
+
+cd ..
+
+cd test/TestCases/LoginPage/
+
+PATH=/Products/app/jenkins/workspace/OneMessaging/Test/omsg-ui-automation/drivers:$PATH
+
+python3 -m robot --variable BROWSER:headlesschrome LoginPage.robot 
+
+files="*.jpg"
+regex="Critical Tests<\/stat>\n<stat pass="([0-9]+)"
+for f in $files    # unquoted in order to allow the glob to expand
+do
+    if [[ $f =~ $regex ]]
+    then
+        name="${BASH_REMATCH[1]}"
+        echo "${name}.jpg"    # concatenate strings
+        name="${name}.jpg"    # same thing stored in a variable
+    else
+        echo "$f doesn't match" >&2 # this could get noisy if there are a lot of non-matching files
+    fi
+done
+
+
+regex="Critical Tests<\/stat>\n<stat pass="([0-9]+)"
+cat output.xml | 
+
+
+
+cd test/TestCases/OneMessagingPage/
+
+PATH=/Products/app/jenkins/workspace/OneMessaging/Test/omsg-ui-automation/drivers:$PATH
+
+python3 -m robot --variable BROWSER:headlesschrome OneMessagingPage.robot
+
