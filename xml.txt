@@ -1,0 +1,3597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.8 on linux)" generated="20211213 10:13:39.301" rpa="false">
+<suite id="s1" name="LoginPage" source="/Products/app/jenkins/workspace/OneMessaging/Test/vftr_ui_automation/test/TestCases/LoginPage/LoginPage.robot">
+<test id="s1-t1" name="One messaging page content control">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:39.608" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:39.608" endtime="20211213 10:13:40.041"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:40.041" endtime="20211213 10:13:40.146"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:40.146" endtime="20211213 10:13:40.147"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:39.607" endtime="20211213 10:13:40.148"></status>
+</kw>
+<kw name="When User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:40.149" endtime="20211213 10:13:40.167"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:40.167" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:40.167" endtime="20211213 10:13:40.317"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:40.148" endtime="20211213 10:13:40.317"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:40.318" endtime="20211213 10:13:40.373"></status>
+</kw>
+<tags>
+<tag>HomePage</tag>
+<tag>Minor</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:39.604" endtime="20211213 10:13:40.373" critical="yes"></status>
+</test>
+<test id="s1-t2" name="One messaging page content control">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://onemessaging-ui-omsg.apps.mbt.vodafone.local/</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:40.376" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:40.375" endtime="20211213 10:13:41.883"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:41.883" endtime="20211213 10:13:41.989"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:41.989" endtime="20211213 10:13:41.990"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${GirisYapButton}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:41.990" endtime="20211213 10:13:42.005"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${GirisYapButton}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:42.006" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:42.005" endtime="20211213 10:13:42.108"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:42.109" endtime="20211213 10:13:42.166"></status>
+</kw>
+<tags>
+<tag>HomePage</tag>
+<tag>Minor</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:40.374" endtime="20211213 10:13:42.166" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Email field must be valid content for Kurumsal MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:42.169" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:42.169" endtime="20211213 10:13:43.594"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:43.595" endtime="20211213 10:13:43.701"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:43.701" endtime="20211213 10:13:43.702"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:42.168" endtime="20211213 10:13:43.702"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:43.703" endtime="20211213 10:13:43.720"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:43.721" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:43.720" endtime="20211213 10:13:43.868"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:43.703" endtime="20211213 10:13:43.868"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:43.869" endtime="20211213 10:13:43.882"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:43.882" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:43.882" endtime="20211213 10:13:43.937"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:43.868" endtime="20211213 10:13:43.937"></status>
+</kw>
+<kw name="When User enters invalid email type in ${EmailTextBox} field" library="BaseSteps">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>vodafone</arg>
+</arguments>
+<msg timestamp="20211213 10:13:43.938" level="INFO">Typing text 'vodafone' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:13:43.938" endtime="20211213 10:13:44.012"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20211213 10:13:44.014" level="INFO">Sending key(s) ('ENTER',) to xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input element.</msg>
+<msg timestamp="20211213 10:13:44.023" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20211213 10:13:44.013" endtime="20211213 10:13:44.284"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:43.937" endtime="20211213 10:13:44.285"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:44.286" endtime="20211213 10:13:44.298"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:44.299" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:44.299" endtime="20211213 10:13:44.351"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:44.285" endtime="20211213 10:13:44.351"></status>
+</kw>
+<kw name="Then User must able to see Lutfen gecerli bir e-posta adresi girin message under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:44.381" level="INFO">${Text} = LÃ¼tfen geÃ§erli bir e-posta adresi girin.</msg>
+<status status="PASS" starttime="20211213 10:13:44.352" endtime="20211213 10:13:44.381"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen geÃ§erli bir e-posta adresi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:44.381" endtime="20211213 10:13:44.382"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:44.351" endtime="20211213 10:13:44.382"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:44.382" endtime="20211213 10:13:44.438"></status>
+</kw>
+<doc>E-mail entry for the Kurumsal MÃ¼steri area must comply with the standards for example "vodafone" is not correct. It must be like vodafone@xx.com</doc>
+<tags>
+<tag>HomePage</tag>
+<tag>Major</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:42.167" endtime="20211213 10:13:44.438" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Email field must be mandatory field for Kurumsal MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:44.441" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:44.440" endtime="20211213 10:13:45.876"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:45.877" endtime="20211213 10:13:45.982"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:45.982" endtime="20211213 10:13:45.983"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:44.440" endtime="20211213 10:13:45.984"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:45.985" endtime="20211213 10:13:46.002"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:46.003" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:46.003" endtime="20211213 10:13:46.164"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:45.984" endtime="20211213 10:13:46.164"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:46.166" endtime="20211213 10:13:46.182"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:46.182" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:46.182" endtime="20211213 10:13:46.236"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:46.165" endtime="20211213 10:13:46.236"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${EmailTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:46.237" endtime="20211213 10:13:46.274"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:46.274" level="INFO">Typing text '' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:13:46.274" endtime="20211213 10:13:46.312"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:46.237" endtime="20211213 10:13:46.312"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:46.313" endtime="20211213 10:13:46.325"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:46.326" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:46.325" endtime="20211213 10:13:46.372"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:46.313" endtime="20211213 10:13:46.372"></status>
+</kw>
+<kw name="Then User Must Able To See Lutfen Gecerli Bir E-posta Adresi Girin Message Under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:46.402" level="INFO">${Text} = LÃ¼tfen geÃ§erli bir e-posta adresi girin.</msg>
+<status status="PASS" starttime="20211213 10:13:46.373" endtime="20211213 10:13:46.402"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen geÃ§erli bir e-posta adresi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:46.402" endtime="20211213 10:13:46.403"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:46.373" endtime="20211213 10:13:46.403"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:46.403" endtime="20211213 10:13:46.458"></status>
+</kw>
+<doc>Email field is mandatory for the Kurumsal MÃ¼steri area. If the User does not fill in their e-mail, User must get an error message like "Lutfen Gecerli Bir E-posta Adresi Girin Message"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:44.438" endtime="20211213 10:13:46.458" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Password field must be mandatory field for Kurumsal MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:46.461" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:46.461" endtime="20211213 10:13:47.896"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:47.897" endtime="20211213 10:13:48.002"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.003" endtime="20211213 10:13:48.005"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:46.460" endtime="20211213 10:13:48.005"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.006" endtime="20211213 10:13:48.028"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.029" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.028" endtime="20211213 10:13:48.190"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.005" endtime="20211213 10:13:48.190"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.191" endtime="20211213 10:13:48.206"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.206" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.206" endtime="20211213 10:13:48.270"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.190" endtime="20211213 10:13:48.270"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:13:48.272" level="INFO">${RandomEmail} = aoxfsb25f8mdhken@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:13:48.272" endtime="20211213 10:13:48.273"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.273" level="INFO">Typing text 'aoxfsb25f8mdhken@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.273" endtime="20211213 10:13:48.404"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.271" endtime="20211213 10:13:48.404"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.405" endtime="20211213 10:13:48.444"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.444" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.444" endtime="20211213 10:13:48.498"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.405" endtime="20211213 10:13:48.498"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.499" endtime="20211213 10:13:48.512"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.512" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.512" endtime="20211213 10:13:48.569"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.499" endtime="20211213 10:13:48.569"></status>
+</kw>
+<kw name="Then User must able to see Lutfen sifrenizi girin message under ${InvalidPasswordMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:48.597" level="INFO">${Text} = LÃ¼tfen ÅŸifrenizi girin.</msg>
+<status status="PASS" starttime="20211213 10:13:48.570" endtime="20211213 10:13:48.597"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen ÅŸifrenizi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:48.597" endtime="20211213 10:13:48.597"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.569" endtime="20211213 10:13:48.597"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:48.598" endtime="20211213 10:13:48.653"></status>
+</kw>
+<doc>Password field is mandatory for the Kurumsal MÃ¼steri area. If the User does not fill in their password, User must get an error message like "Lutfen sifrenizi girin"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:46.459" endtime="20211213 10:13:48.653" critical="yes"></status>
+</test>
+<test id="s1-t6" name="User wants to login with wrong password or e-mail for Kurumsal MÃ¼ÅŸteri, they must get an error message.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:48.655" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:48.655" endtime="20211213 10:13:50.043"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:50.044" endtime="20211213 10:13:50.149"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.149" endtime="20211213 10:13:50.151"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:48.655" endtime="20211213 10:13:50.151"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.152" endtime="20211213 10:13:50.170"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.171" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.170" endtime="20211213 10:13:50.313"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.151" endtime="20211213 10:13:50.313"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.314" endtime="20211213 10:13:50.329"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.330" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.329" endtime="20211213 10:13:50.386"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.313" endtime="20211213 10:13:50.386"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:13:50.388" level="INFO">${RandomEmail} = sx5dkw2buexhgrr1@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:13:50.387" endtime="20211213 10:13:50.388"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.389" level="INFO">Typing text 'sx5dkw2buexhgrr1@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.388" endtime="20211213 10:13:50.516"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.387" endtime="20211213 10:13:50.516"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.517" endtime="20211213 10:13:50.553"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.554" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.554" endtime="20211213 10:13:50.625"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.517" endtime="20211213 10:13:50.625"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.626" endtime="20211213 10:13:50.639"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.640" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.640" endtime="20211213 10:13:50.706"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.626" endtime="20211213 10:13:50.706"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:50.851" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:13:50.707" endtime="20211213 10:13:50.851"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:50.851" endtime="20211213 10:13:50.851"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.707" endtime="20211213 10:13:50.851"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:50.852" endtime="20211213 10:13:50.908"></status>
+</kw>
+<doc>When the User wants to log in with a non-existent email and password for Kurumsal MÃ¼steri area, User must get an error message like "KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:48.654" endtime="20211213 10:13:50.908" critical="yes"></status>
+</test>
+<test id="s1-t7" name="User login in 3 times incorrectly, they should get the error message that the account is locked.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:50.910" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:50.910" endtime="20211213 10:13:52.364"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:52.365" endtime="20211213 10:13:52.470"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:52.470" endtime="20211213 10:13:52.472"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:50.910" endtime="20211213 10:13:52.472"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:52.473" endtime="20211213 10:13:52.492"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:52.493" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:52.492" endtime="20211213 10:13:52.665"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:52.473" endtime="20211213 10:13:52.665"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:52.666" endtime="20211213 10:13:52.678"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:52.679" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:52.678" endtime="20211213 10:13:52.736"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:52.665" endtime="20211213 10:13:52.737"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:13:52.738" level="INFO">${RandomEmail} = qnbvkzw822vvwytm@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:13:52.738" endtime="20211213 10:13:52.738"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:52.738" level="INFO">Typing text 'qnbvkzw822vvwytm@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:13:52.738" endtime="20211213 10:13:52.862"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:52.737" endtime="20211213 10:13:52.862"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:52.863" endtime="20211213 10:13:52.900"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:52.901" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:13:52.901" endtime="20211213 10:13:52.972"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:52.863" endtime="20211213 10:13:52.973"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:52.974" endtime="20211213 10:13:52.988"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:52.989" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:52.988" endtime="20211213 10:13:53.055"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:52.973" endtime="20211213 10:13:53.056"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:53.197" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:13:53.057" endtime="20211213 10:13:53.197"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:53.197" endtime="20211213 10:13:53.197"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:53.056" endtime="20211213 10:13:53.197"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:53.198" endtime="20211213 10:13:53.206"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:53.207" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:53.207" endtime="20211213 10:13:53.252"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:53.198" endtime="20211213 10:13:53.252"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:53.273" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:13:53.253" endtime="20211213 10:13:53.273"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:53.274" endtime="20211213 10:13:53.274"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:53.253" endtime="20211213 10:13:53.274"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:53.275" endtime="20211213 10:13:53.284"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:53.285" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:13:53.404" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-1.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:13:53.321" endtime="20211213 10:13:53.405"></status>
+</kw>
+<msg timestamp="20211213 10:13:53.406" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</msg>
+<status status="FAIL" starttime="20211213 10:13:53.285" endtime="20211213 10:13:53.406"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:13:53.275" endtime="20211213 10:13:53.407"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:53.407" endtime="20211213 10:13:53.463"></status>
+</kw>
+<doc>The User account must be locked when the User tries to log in unsuccessfully 3 times in a row for Kurumsal MÃ¼steri area, User must get an error message like "3 defa hatalÄ± giriÅŸ yaptÄ±ÄŸÄ±nÄ±z iÃ§in hesabÄ±nÄ±z geÃ§ici sÃ¼reyle kitlenmiÅŸtir"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:13:50.908" endtime="20211213 10:13:53.463" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</status>
+</test>
+<test id="s1-t8" name="Email field must be valid content for Aktivasyon MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:53.466" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:53.466" endtime="20211213 10:13:54.866"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:13:54.867" endtime="20211213 10:13:54.972"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:54.972" endtime="20211213 10:13:54.973"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:53.465" endtime="20211213 10:13:54.974"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:54.975" endtime="20211213 10:13:54.991"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:54.991" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:13:54.991" endtime="20211213 10:13:55.130"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:54.974" endtime="20211213 10:13:55.130"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.131" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211213 10:13:55.131" endtime="20211213 10:13:58.132"></status>
+</kw>
+<kw name="And User click ${VodafoneAktivasyon} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:58.133" endtime="20211213 10:13:58.147"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.147" level="INFO">Clicking element 'xpath=//a[contains(text(),'Aktivasyon')]'.</msg>
+<status status="PASS" starttime="20211213 10:13:58.147" endtime="20211213 10:13:58.205"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:58.132" endtime="20211213 10:13:58.206"></status>
+</kw>
+<kw name="When User enters invalid email type in ${KullaniciAdiTextBox} field" library="BaseSteps">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>vodafone</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.207" level="INFO">Typing text 'vodafone' into text field 'xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z']'.</msg>
+<status status="PASS" starttime="20211213 10:13:58.206" endtime="20211213 10:13:58.283"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.284" level="INFO">Sending key(s) ('ENTER',) to xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z'] element.</msg>
+<msg timestamp="20211213 10:13:58.293" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20211213 10:13:58.283" endtime="20211213 10:13:58.568"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:58.206" endtime="20211213 10:13:58.568"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:13:58.569" endtime="20211213 10:13:58.582"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.582" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:13:58.582" endtime="20211213 10:13:58.635"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:58.569" endtime="20211213 10:13:58.635"></status>
+</kw>
+<kw name="Then User must able to see LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin message under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:13:58.667" level="INFO">${Text} = LÃ¼tfen ÅŸifrenizi girin.</msg>
+<status status="PASS" starttime="20211213 10:13:58.637" endtime="20211213 10:13:58.667"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin.</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.668" level="FAIL">LÃ¼tfen ÅŸifrenizi girin. != LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin.</msg>
+<status status="FAIL" starttime="20211213 10:13:58.668" endtime="20211213 10:13:58.668"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:13:58.636" endtime="20211213 10:13:58.669"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:13:58.669" endtime="20211213 10:13:58.726"></status>
+</kw>
+<doc>E-mail entry for the Aktivasyon MÃ¼steri area must comply with the standards for example "vodafone" is not correct. It must be like vodafone@xx.com</doc>
+<tags>
+<tag>HomePage</tag>
+<tag>Major</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:13:53.464" endtime="20211213 10:13:58.726" critical="yes">LÃ¼tfen ÅŸifrenizi girin. != LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin.</status>
+</test>
+<test id="s1-t9" name="Email field must be mandatory field for Aktivasyon MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:13:58.729" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:13:58.728" endtime="20211213 10:14:00.179"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:00.180" endtime="20211213 10:14:00.288"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.288" endtime="20211213 10:14:00.289"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:13:58.728" endtime="20211213 10:14:00.290"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.291" endtime="20211213 10:14:00.307"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:00.308" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:00.307" endtime="20211213 10:14:00.444"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.290" endtime="20211213 10:14:00.444"></status>
+</kw>
+<kw name="And User click ${VodafoneAktivasyon} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.445" endtime="20211213 10:14:00.460"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:00.461" level="INFO">Clicking element 'xpath=//a[contains(text(),'Aktivasyon')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:00.460" endtime="20211213 10:14:00.520"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.444" endtime="20211213 10:14:00.520"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${KullaniciAdiTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.521" endtime="20211213 10:14:00.558"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:00.559" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z']'.</msg>
+<status status="PASS" starttime="20211213 10:14:00.559" endtime="20211213 10:14:00.599"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.521" endtime="20211213 10:14:00.599"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.600" endtime="20211213 10:14:00.611"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:00.612" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:00.612" endtime="20211213 10:14:00.668"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.599" endtime="20211213 10:14:00.668"></status>
+</kw>
+<kw name="User must able to see LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin message under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:00.697" level="INFO">${Text} = LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin.</msg>
+<status status="PASS" starttime="20211213 10:14:00.669" endtime="20211213 10:14:00.697"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen kullanÄ±cÄ± adÄ±nÄ±zÄ± girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:00.697" endtime="20211213 10:14:00.697"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.668" endtime="20211213 10:14:00.697"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:00.698" endtime="20211213 10:14:00.753"></status>
+</kw>
+<doc>Email field is mandatory for the Aktivasyon MÃ¼steri area. If the User does not fill in their e-mail, User must get an error message like "Lutfen Gecerli Bir E-posta Adresi Girin Message"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:13:58.727" endtime="20211213 10:14:00.754" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Password field must be mandatory field for Aktivasyon MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:00.757" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:00.756" endtime="20211213 10:14:02.152"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:02.153" endtime="20211213 10:14:02.258"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.258" endtime="20211213 10:14:02.259"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:00.756" endtime="20211213 10:14:02.260"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.260" endtime="20211213 10:14:02.277"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.278" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.277" endtime="20211213 10:14:02.412"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.260" endtime="20211213 10:14:02.412"></status>
+</kw>
+<kw name="And User click ${VodafoneAktivasyon} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.413" endtime="20211213 10:14:02.429"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.429" level="INFO">Clicking element 'xpath=//a[contains(text(),'Aktivasyon')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.429" endtime="20211213 10:14:02.488"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.412" endtime="20211213 10:14:02.488"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${KullaniciAdiTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:02.490" level="INFO">${RandomEmail} = 4ts6mb3ddleajtn2@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:02.489" endtime="20211213 10:14:02.490"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.490" level="INFO">Typing text '4ts6mb3ddleajtn2@gmail.com' into text field 'xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z']'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.490" endtime="20211213 10:14:02.610"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.489" endtime="20211213 10:14:02.610"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.611" endtime="20211213 10:14:02.646"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.646" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.646" endtime="20211213 10:14:02.698"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.610" endtime="20211213 10:14:02.699"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.699" endtime="20211213 10:14:02.712"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.712" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.712" endtime="20211213 10:14:02.768"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.699" endtime="20211213 10:14:02.768"></status>
+</kw>
+<kw name="Then User must able to see Lutfen sifrenizi girin message under ${InvalidPasswordMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:02.798" level="INFO">${Text} = LÃ¼tfen ÅŸifrenizi girin.</msg>
+<status status="PASS" starttime="20211213 10:14:02.769" endtime="20211213 10:14:02.798"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen ÅŸifrenizi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:02.799" endtime="20211213 10:14:02.799"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.768" endtime="20211213 10:14:02.799"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:02.799" endtime="20211213 10:14:02.854"></status>
+</kw>
+<doc>Password field is mandatory for the Aktivasyon MÃ¼steri area. If the User does not fill in their password, User must get an error message like "Lutfen sifrenizi girin"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:00.754" endtime="20211213 10:14:02.854" critical="yes"></status>
+</test>
+<test id="s1-t11" name="User wants to login with wrong password or e-mail for Aktivasyon MÃ¼ÅŸteri, they must get an error message.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:02.857" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:02.857" endtime="20211213 10:14:04.285"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:04.286" endtime="20211213 10:14:04.391"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:04.392" endtime="20211213 10:14:04.393"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:02.856" endtime="20211213 10:14:04.393"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:04.394" endtime="20211213 10:14:04.411"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:04.412" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:04.412" endtime="20211213 10:14:04.551"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.394" endtime="20211213 10:14:04.551"></status>
+</kw>
+<kw name="And User click ${VodafoneAktivasyon} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:04.553" endtime="20211213 10:14:04.568"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:04.568" level="INFO">Clicking element 'xpath=//a[contains(text(),'Aktivasyon')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:04.568" endtime="20211213 10:14:04.621"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.552" endtime="20211213 10:14:04.622"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${KullaniciAdiTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:04.623" level="INFO">${RandomEmail} = rorprd1u3m845jv0@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:04.622" endtime="20211213 10:14:04.623"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:04.624" level="INFO">Typing text 'rorprd1u3m845jv0@gmail.com' into text field 'xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z']'.</msg>
+<status status="PASS" starttime="20211213 10:14:04.624" endtime="20211213 10:14:04.747"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.622" endtime="20211213 10:14:04.747"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:04.748" endtime="20211213 10:14:04.786"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:04.786" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:04.786" endtime="20211213 10:14:04.864"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.748" endtime="20211213 10:14:04.864"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:04.865" endtime="20211213 10:14:04.878"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:04.878" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:04.878" endtime="20211213 10:14:04.938"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.864" endtime="20211213 10:14:04.938"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:05.081" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:04.939" endtime="20211213 10:14:05.081"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:05.082" endtime="20211213 10:14:05.082"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:04.939" endtime="20211213 10:14:05.082"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:05.082" endtime="20211213 10:14:05.138"></status>
+</kw>
+<doc>When the User wants to log in with a non-existent email and password for Aktivasyon MÃ¼steri area, User must get an error message like "KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:02.855" endtime="20211213 10:14:05.138" critical="yes"></status>
+</test>
+<test id="s1-t12" name="User login in 3 times incorrectly, they should get the error message that the account is locked.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:05.140" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:05.140" endtime="20211213 10:14:06.528"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:06.528" endtime="20211213 10:14:06.637"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:06.637" endtime="20211213 10:14:06.638"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:05.140" endtime="20211213 10:14:06.639"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:06.640" endtime="20211213 10:14:06.657"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:06.658" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:06.658" endtime="20211213 10:14:06.794"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:06.639" endtime="20211213 10:14:06.794"></status>
+</kw>
+<kw name="And User click ${VodafoneAktivasyon} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:06.795" endtime="20211213 10:14:06.810"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:06.811" level="INFO">Clicking element 'xpath=//a[contains(text(),'Aktivasyon')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:06.810" endtime="20211213 10:14:06.872"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:06.795" endtime="20211213 10:14:06.872"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${KullaniciAdiTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:06.874" level="INFO">${RandomEmail} = ifn3m5e0kzjeq2it@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:06.873" endtime="20211213 10:14:06.874"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:06.874" level="INFO">Typing text 'ifn3m5e0kzjeq2it@gmail.com' into text field 'xpath=//input[@placeholder='KullanÄ±cÄ± adÄ±nÄ±z']'.</msg>
+<status status="PASS" starttime="20211213 10:14:06.874" endtime="20211213 10:14:06.996"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:06.873" endtime="20211213 10:14:06.996"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:06.997" endtime="20211213 10:14:07.033"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:07.033" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:07.033" endtime="20211213 10:14:07.100"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:06.997" endtime="20211213 10:14:07.100"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:07.101" endtime="20211213 10:14:07.114"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:07.115" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:07.115" endtime="20211213 10:14:07.171"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:07.101" endtime="20211213 10:14:07.171"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:07.311" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:07.172" endtime="20211213 10:14:07.311"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:07.311" endtime="20211213 10:14:07.312"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:07.171" endtime="20211213 10:14:07.312"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:07.313" endtime="20211213 10:14:07.321"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:07.322" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:07.322" endtime="20211213 10:14:07.367"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:07.312" endtime="20211213 10:14:07.368"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:07.389" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:07.369" endtime="20211213 10:14:07.389"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:07.389" endtime="20211213 10:14:07.390"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:07.368" endtime="20211213 10:14:07.390"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:07.391" endtime="20211213 10:14:07.400"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:07.401" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:14:07.518" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-2.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:14:07.433" endtime="20211213 10:14:07.518"></status>
+</kw>
+<msg timestamp="20211213 10:14:07.518" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</msg>
+<status status="FAIL" starttime="20211213 10:14:07.401" endtime="20211213 10:14:07.518"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:14:07.391" endtime="20211213 10:14:07.519"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:07.519" endtime="20211213 10:14:07.574"></status>
+</kw>
+<doc>The User account must be locked when the User tries to log in unsuccessfully 3 times in a row for Aktivasyon MÃ¼steri area, User must get an error message like "3 defa hatalÄ± giriÅŸ yaptÄ±ÄŸÄ±nÄ±z iÃ§in hesabÄ±nÄ±z geÃ§ici sÃ¼reyle kitlenmiÅŸtir"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:05.139" endtime="20211213 10:14:07.574" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</status>
+</test>
+<test id="s1-t13" name="Email field must be valid content for Pazarlama MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:07.577" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:07.577" endtime="20211213 10:14:08.979"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:08.980" endtime="20211213 10:14:09.084"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:09.085" endtime="20211213 10:14:09.086"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:07.576" endtime="20211213 10:14:09.086"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:09.087" endtime="20211213 10:14:09.105"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.106" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:09.106" endtime="20211213 10:14:09.265"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.087" endtime="20211213 10:14:09.266"></status>
+</kw>
+<kw name="And User click ${VodafonePazarlama} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:09.266" endtime="20211213 10:14:09.280"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.281" level="INFO">Clicking element 'xpath=//a[contains(text(),'Pazarlama')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:09.280" endtime="20211213 10:14:09.337"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.266" endtime="20211213 10:14:09.337"></status>
+</kw>
+<kw name="When User enters invalid email type in ${EmailTextBox} field" library="BaseSteps">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>vodafone</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.339" level="INFO">Typing text 'vodafone' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:09.338" endtime="20211213 10:14:09.419"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.421" level="INFO">Sending key(s) ('ENTER',) to xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input element.</msg>
+<msg timestamp="20211213 10:14:09.431" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20211213 10:14:09.420" endtime="20211213 10:14:09.701"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.338" endtime="20211213 10:14:09.701"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:09.702" endtime="20211213 10:14:09.716"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.716" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:09.716" endtime="20211213 10:14:09.767"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.702" endtime="20211213 10:14:09.768"></status>
+</kw>
+<kw name="Then User must able to see Lutfen gecerli bir e-posta adresi girin message under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:09.797" level="INFO">${Text} = LÃ¼tfen geÃ§erli bir e-posta adresi girin.</msg>
+<status status="PASS" starttime="20211213 10:14:09.769" endtime="20211213 10:14:09.797"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen geÃ§erli bir e-posta adresi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:09.797" endtime="20211213 10:14:09.798"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.768" endtime="20211213 10:14:09.798"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:09.798" endtime="20211213 10:14:09.854"></status>
+</kw>
+<doc>E-mail entry for the Pazarlama MÃ¼steri area must comply with the standards for example "vodafone" is not correct. It must be like vodafone@xx.com</doc>
+<tags>
+<tag>HomePage</tag>
+<tag>Major</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:07.575" endtime="20211213 10:14:09.854" critical="yes"></status>
+</test>
+<test id="s1-t14" name="Email field must be mandatory field for Pazarlama MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:09.857" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:09.857" endtime="20211213 10:14:11.355"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:11.356" endtime="20211213 10:14:11.461"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.461" endtime="20211213 10:14:11.463"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:09.856" endtime="20211213 10:14:11.463"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.464" endtime="20211213 10:14:11.481"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:11.481" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:11.481" endtime="20211213 10:14:11.624"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.463" endtime="20211213 10:14:11.624"></status>
+</kw>
+<kw name="And User click ${VodafonePazarlama} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.625" endtime="20211213 10:14:11.638"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:11.638" level="INFO">Clicking element 'xpath=//a[contains(text(),'Pazarlama')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:11.638" endtime="20211213 10:14:11.687"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.625" endtime="20211213 10:14:11.687"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${EmailTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.688" endtime="20211213 10:14:11.735"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:11.736" level="INFO">Typing text '' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:11.736" endtime="20211213 10:14:11.774"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.687" endtime="20211213 10:14:11.774"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.775" endtime="20211213 10:14:11.788"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:11.789" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:11.788" endtime="20211213 10:14:11.837"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.775" endtime="20211213 10:14:11.838"></status>
+</kw>
+<kw name="Then User Must Able To See Lutfen Gecerli Bir E-posta Adresi Girin Message Under ${InvalidEmailMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:11.867" level="INFO">${Text} = LÃ¼tfen geÃ§erli bir e-posta adresi girin.</msg>
+<status status="PASS" starttime="20211213 10:14:11.838" endtime="20211213 10:14:11.867"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen geÃ§erli bir e-posta adresi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:11.868" endtime="20211213 10:14:11.868"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.838" endtime="20211213 10:14:11.868"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:11.869" endtime="20211213 10:14:11.924"></status>
+</kw>
+<doc>Email field is mandatory for the Pazarlama MÃ¼steri area. If the User does not fill in their e-mail, User must get an error message like "Lutfen Gecerli Bir E-posta Adresi Girin Message"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:09.855" endtime="20211213 10:14:11.924" critical="yes"></status>
+</test>
+<test id="s1-t15" name="Password field must be mandatory field for Pazarlama MÃ¼ÅŸteri">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:11.927" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:11.927" endtime="20211213 10:14:13.349"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:13.349" endtime="20211213 10:14:13.455"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:13.456" endtime="20211213 10:14:13.458"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:11.926" endtime="20211213 10:14:13.458"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:13.459" endtime="20211213 10:14:13.477"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:13.478" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:13.477" endtime="20211213 10:14:13.621"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.458" endtime="20211213 10:14:13.621"></status>
+</kw>
+<kw name="And User click ${VodafonePazarlama} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:13.622" endtime="20211213 10:14:13.637"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:13.638" level="INFO">Clicking element 'xpath=//a[contains(text(),'Pazarlama')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:13.637" endtime="20211213 10:14:13.688"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.622" endtime="20211213 10:14:13.688"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:13.689" level="INFO">${RandomEmail} = ar3a7sgilk3m5ggt@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:13.689" endtime="20211213 10:14:13.689"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:13.690" level="INFO">Typing text 'ar3a7sgilk3m5ggt@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:13.690" endtime="20211213 10:14:13.817"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.688" endtime="20211213 10:14:13.817"></status>
+</kw>
+<kw name="When User enter &quot;${EMPTY}&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:13.818" endtime="20211213 10:14:13.855"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:13.855" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:13.855" endtime="20211213 10:14:13.908"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.818" endtime="20211213 10:14:13.909"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:13.909" endtime="20211213 10:14:13.922"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:13.923" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:13.922" endtime="20211213 10:14:13.970"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.909" endtime="20211213 10:14:13.970"></status>
+</kw>
+<kw name="Then User must able to see Lutfen sifrenizi girin message under ${InvalidPasswordMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:14.000" level="INFO">${Text} = LÃ¼tfen ÅŸifrenizi girin.</msg>
+<status status="PASS" starttime="20211213 10:14:13.971" endtime="20211213 10:14:14.000"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>LÃ¼tfen ÅŸifrenizi girin.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:14.000" endtime="20211213 10:14:14.001"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:13.971" endtime="20211213 10:14:14.001"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:14.001" endtime="20211213 10:14:14.056"></status>
+</kw>
+<doc>Password field is mandatory for the Pazarlama MÃ¼steri area. If the User does not fill in their password, User must get an error message like "Lutfen sifrenizi girin"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:11.925" endtime="20211213 10:14:14.056" critical="yes"></status>
+</test>
+<test id="s1-t16" name="User wants to login with wrong password or e-mail for Pazarlama MÃ¼ÅŸteri, they must get an error message.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:14.058" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:14.058" endtime="20211213 10:14:15.452"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:15.453" endtime="20211213 10:14:15.558"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:15.559" endtime="20211213 10:14:15.560"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:14.058" endtime="20211213 10:14:15.560"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:15.561" endtime="20211213 10:14:15.578"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:15.579" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:15.579" endtime="20211213 10:14:15.728"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:15.560" endtime="20211213 10:14:15.728"></status>
+</kw>
+<kw name="And User click ${VodafonePazarlama} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:15.729" endtime="20211213 10:14:15.742"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:15.743" level="INFO">Clicking element 'xpath=//a[contains(text(),'Pazarlama')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:15.743" endtime="20211213 10:14:15.803"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:15.728" endtime="20211213 10:14:15.803"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:15.805" level="INFO">${RandomEmail} = t0ptqk0w6sji5l8h@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:15.804" endtime="20211213 10:14:15.805"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:15.805" level="INFO">Typing text 't0ptqk0w6sji5l8h@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:15.805" endtime="20211213 10:14:15.930"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:15.804" endtime="20211213 10:14:15.930"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:15.931" endtime="20211213 10:14:15.969"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:15.970" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:15.969" endtime="20211213 10:14:16.042"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:15.931" endtime="20211213 10:14:16.042"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:16.043" endtime="20211213 10:14:16.056"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:16.057" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:16.056" endtime="20211213 10:14:16.104"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:16.043" endtime="20211213 10:14:16.104"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:16.244" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:16.105" endtime="20211213 10:14:16.244"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:16.245" endtime="20211213 10:14:16.245"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:16.105" endtime="20211213 10:14:16.245"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:16.246" endtime="20211213 10:14:16.301"></status>
+</kw>
+<doc>When the User wants to log in with a non-existent email and password for Pazarlama MÃ¼steri area, User must get an error message like "KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:14.057" endtime="20211213 10:14:16.301" critical="yes"></status>
+</test>
+<test id="s1-t17" name="User login in 3 times incorrectly, they should get the error message that the account is locked.">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:16.303" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:16.303" endtime="20211213 10:14:17.691"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:17.692" endtime="20211213 10:14:17.797"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:17.797" endtime="20211213 10:14:17.799"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:16.302" endtime="20211213 10:14:17.799"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:17.800" endtime="20211213 10:14:17.816"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:17.816" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:17.816" endtime="20211213 10:14:17.957"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:17.799" endtime="20211213 10:14:17.957"></status>
+</kw>
+<kw name="And User click ${VodafonePazarlama} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:17.958" endtime="20211213 10:14:17.974"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:17.975" level="INFO">Clicking element 'xpath=//a[contains(text(),'Pazarlama')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:17.974" endtime="20211213 10:14:18.036"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:17.958" endtime="20211213 10:14:18.036"></status>
+</kw>
+<kw name="When User entered a valid email adress to ${EmailTextBox} field" library="BaseSteps">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>TestData.getRandomEmails()</arg>
+<arg>modules=TestData</arg>
+</arguments>
+<assign>
+<var>${RandomEmail}</var>
+</assign>
+<msg timestamp="20211213 10:14:18.038" level="INFO">${RandomEmail} = l9nk6aqiingrkdt9@gmail.com</msg>
+<status status="PASS" starttime="20211213 10:14:18.037" endtime="20211213 10:14:18.038"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${RandomEmail}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.038" level="INFO">Typing text 'l9nk6aqiingrkdt9@gmail.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:18.038" endtime="20211213 10:14:18.161"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.037" endtime="20211213 10:14:18.162"></status>
+</kw>
+<kw name="When User enter &quot;123456&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.163" endtime="20211213 10:14:18.198"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.199" level="INFO">Typing text '123456' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:18.199" endtime="20211213 10:14:18.265"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.162" endtime="20211213 10:14:18.265"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.266" endtime="20211213 10:14:18.278"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.279" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:18.279" endtime="20211213 10:14:18.336"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.266" endtime="20211213 10:14:18.337"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:18.476" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:18.338" endtime="20211213 10:14:18.476"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.477" endtime="20211213 10:14:18.477"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.337" endtime="20211213 10:14:18.477"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.478" endtime="20211213 10:14:18.486"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.487" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:18.486" endtime="20211213 10:14:18.534"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.478" endtime="20211213 10:14:18.534"></status>
+</kw>
+<kw name="Then User must able to see KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz error message ${NotificationErrorMessage}" library="LoginPageSteps">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<assign>
+<var>${Text}</var>
+</assign>
+<msg timestamp="20211213 10:14:18.552" level="INFO">${Text} = KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</msg>
+<status status="PASS" starttime="20211213 10:14:18.535" endtime="20211213 10:14:18.552"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${Text}</arg>
+<arg>KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±.LÃ¼tfen tekrar deneyiniz.</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.552" endtime="20211213 10:14:18.553"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.534" endtime="20211213 10:14:18.553"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:18.553" endtime="20211213 10:14:18.562"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.562" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:14:18.685" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-3.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:14:18.594" endtime="20211213 10:14:18.685"></status>
+</kw>
+<msg timestamp="20211213 10:14:18.685" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</msg>
+<status status="FAIL" starttime="20211213 10:14:18.562" endtime="20211213 10:14:18.685"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:14:18.553" endtime="20211213 10:14:18.686"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:18.686" endtime="20211213 10:14:18.741"></status>
+</kw>
+<doc>The User account must be locked when the User tries to log in unsuccessfully 3 times in a row for Pazarlama MÃ¼steri area, User must get an error message like "3 defa hatalÄ± giriÅŸ yaptÄ±ÄŸÄ±nÄ±z iÃ§in hesabÄ±nÄ±z geÃ§ici sÃ¼reyle kitlenmiÅŸtir"</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>ValidationControl</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:16.301" endtime="20211213 10:14:18.741" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="btn primary" href="javascript:void(0)" title="GiriÅŸ Yap"&gt;...&lt;/a&gt; is not clickable at point (384, 483). Other element would receive the click: &lt;div class="loading"&gt;...&lt;/div&gt;
+  (Session info: headless chrome=77.0.3865.120)
+</status>
+</test>
+<test id="s1-t18" name="The sms verification field after successful login is a mandatory field for Vodafone Temsilci">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:18.744" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:18.743" endtime="20211213 10:14:20.141"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:20.141" endtime="20211213 10:14:20.246"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.246" endtime="20211213 10:14:20.247"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:18.743" endtime="20211213 10:14:20.247"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.248" endtime="20211213 10:14:20.265"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:20.266" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:20.265" endtime="20211213 10:14:20.472"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:20.248" endtime="20211213 10:14:20.472"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.473" endtime="20211213 10:14:20.486"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:20.487" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:20.486" endtime="20211213 10:14:20.535"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:20.473" endtime="20211213 10:14:20.535"></status>
+</kw>
+<kw name="When User enter &quot;sales@vodafone.com&quot; to ${EmailTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.537" endtime="20211213 10:14:20.571"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:20.572" level="INFO">Typing text 'sales@vodafone.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:20.572" endtime="20211213 10:14:20.657"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:20.536" endtime="20211213 10:14:20.658"></status>
+</kw>
+<kw name="When User enter &quot;admin&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.658" endtime="20211213 10:14:20.693"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:20.694" level="INFO">Typing text 'admin' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:20.693" endtime="20211213 10:14:20.765"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:20.658" endtime="20211213 10:14:20.765"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:20.766" endtime="20211213 10:14:20.778"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:20.779" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:20.779" endtime="20211213 10:14:20.836"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:20.765" endtime="20211213 10:14:20.837"></status>
+</kw>
+<kw name="Then User must be able to see Talebiniz basarÄ±lÄ± bir sekilde alÄ±ndÄ± message ${NotificationMessage}" library="LoginPageSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>5</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:14:27.639" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-4.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:14:27.583" endtime="20211213 10:14:27.639"></status>
+</kw>
+<msg timestamp="20211213 10:14:27.640" level="FAIL">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20211213 10:14:20.838" endtime="20211213 10:14:27.640"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:14:20.837" endtime="20211213 10:14:27.640"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:27.640" endtime="20211213 10:14:27.695"></status>
+</kw>
+<doc>Sms verification field that comes after the User logs in successfully is the mandatory field. If the User does not fill in this field, User must get the error message LÃ¼tfen telefonunuza gelen sms sifresini girin.</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+<tag>MandatoryControl</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:18.742" endtime="20211213 10:14:27.696" critical="yes">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t19" name="Succesfully login for Vodafone Temsilci">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:27.698" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:27.698" endtime="20211213 10:14:29.104"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:29.105" endtime="20211213 10:14:29.209"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.210" endtime="20211213 10:14:29.211"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:27.697" endtime="20211213 10:14:29.211"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.212" endtime="20211213 10:14:29.230"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:29.231" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:29.231" endtime="20211213 10:14:29.384"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:29.212" endtime="20211213 10:14:29.384"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.385" endtime="20211213 10:14:29.403"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:29.403" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:29.403" endtime="20211213 10:14:29.468"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:29.385" endtime="20211213 10:14:29.468"></status>
+</kw>
+<kw name="When User enter &quot;sales@vodafone.com&quot; to ${EmailTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.469" endtime="20211213 10:14:29.506"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:29.507" level="INFO">Typing text 'sales@vodafone.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:29.507" endtime="20211213 10:14:29.603"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:29.469" endtime="20211213 10:14:29.603"></status>
+</kw>
+<kw name="When User enter &quot;admin&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.604" endtime="20211213 10:14:29.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:29.643" level="INFO">Typing text 'admin' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:29.642" endtime="20211213 10:14:29.711"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:29.603" endtime="20211213 10:14:29.711"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:29.712" endtime="20211213 10:14:29.725"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:29.725" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:29.725" endtime="20211213 10:14:29.787"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:29.712" endtime="20211213 10:14:29.787"></status>
+</kw>
+<kw name="Then User must be able to see Talebiniz basarÄ±lÄ± bir sekilde alÄ±ndÄ± message ${NotificationMessage}" library="LoginPageSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>5</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:14:36.610" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-5.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:14:36.548" endtime="20211213 10:14:36.611"></status>
+</kw>
+<msg timestamp="20211213 10:14:36.611" level="FAIL">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20211213 10:14:29.788" endtime="20211213 10:14:36.611"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:14:29.787" endtime="20211213 10:14:36.611"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:36.612" endtime="20211213 10:14:36.667"></status>
+</kw>
+<doc>User must be successful login with their current account and see the User name in the upper right corner of the page.</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:27.696" endtime="20211213 10:14:36.667" critical="yes">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t20" name="Succesfully logout for Vodafone Temsilci">
+<kw name="Given User go to One Messaging page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:36.670" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:36.670" endtime="20211213 10:14:38.101"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:38.101" endtime="20211213 10:14:38.207"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:38.207" endtime="20211213 10:14:38.208"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:36.669" endtime="20211213 10:14:38.209"></status>
+</kw>
+<kw name="And User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:38.210" endtime="20211213 10:14:38.227"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:38.227" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:38.227" endtime="20211213 10:14:39.419"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:38.209" endtime="20211213 10:14:39.419"></status>
+</kw>
+<kw name="And User click ${VodafoneKurumsal} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:39.420" endtime="20211213 10:14:39.433"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:39.433" level="INFO">Clicking element 'xpath=//a[contains(text(),'Kurumsal')]'.</msg>
+<status status="PASS" starttime="20211213 10:14:39.433" endtime="20211213 10:14:39.485"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:39.419" endtime="20211213 10:14:39.485"></status>
+</kw>
+<kw name="When User enter &quot;sales@vodafone.com&quot; to ${EmailTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:39.486" endtime="20211213 10:14:39.521"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:39.521" level="INFO">Typing text 'sales@vodafone.com' into text field 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20211213 10:14:39.521" endtime="20211213 10:14:39.607"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:39.485" endtime="20211213 10:14:39.607"></status>
+</kw>
+<kw name="When User enter &quot;admin&quot; to ${PasswordTextBox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:39.608" endtime="20211213 10:14:39.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:39.643" level="INFO">Typing text 'admin' into text field 'xpath=//input[@placeholder='Åžifreniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:39.643" endtime="20211213 10:14:39.709"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:39.607" endtime="20211213 10:14:39.709"></status>
+</kw>
+<kw name="And User click ${IlerleButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:39.710" endtime="20211213 10:14:39.722"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:39.722" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:39.722" endtime="20211213 10:14:39.769"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:39.709" endtime="20211213 10:14:39.769"></status>
+</kw>
+<kw name="Then User must be able to see Talebiniz basarÄ±lÄ± bir sekilde alÄ±ndÄ± message ${NotificationMessage}" library="LoginPageSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>5</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 10:14:46.571" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ScreenShots/selenium-screenshot-6.png"&gt;&lt;img src="ScreenShots/selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211213 10:14:46.513" endtime="20211213 10:14:46.571"></status>
+</kw>
+<msg timestamp="20211213 10:14:46.572" level="FAIL">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20211213 10:14:39.770" endtime="20211213 10:14:46.572"></status>
+</kw>
+<status status="FAIL" starttime="20211213 10:14:39.770" endtime="20211213 10:14:46.572"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:46.572" endtime="20211213 10:14:46.628"></status>
+</kw>
+<doc>When a logged in User logs out, User must see the home page.</doc>
+<tags>
+<tag>Critical</tag>
+<tag>HomePage</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:36.668" endtime="20211213 10:14:46.628" critical="yes">Element 'xpath=//div[@class='notification']' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t21" name="Åžifre sÄ±fÄ±rlama yerinde E-posta adresinin boÅŸ girilmiÅŸ olmasÄ±">
+<kw name="Given User Go To One Messaging Page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:46.631" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:46.630" endtime="20211213 10:14:48.103"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:48.104" endtime="20211213 10:14:48.209"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:48.209" endtime="20211213 10:14:48.211"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:46.630" endtime="20211213 10:14:48.211"></status>
+</kw>
+<kw name="When User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:48.212" endtime="20211213 10:14:48.229"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.229" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:48.229" endtime="20211213 10:14:48.367"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.211" endtime="20211213 10:14:48.367"></status>
+</kw>
+<kw name="And User click ${ForgotPassword} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:48.368" endtime="20211213 10:14:48.384"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.385" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211213 10:14:48.385" endtime="20211213 10:14:48.450"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.368" endtime="20211213 10:14:48.450"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFirstRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.480" level="INFO">Element 'xpath=//div[@class='popup-title']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:48.451" endtime="20211213 10:14:48.481"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.450" endtime="20211213 10:14:48.481"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextSecondRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.510" level="INFO">Element 'xpath=//div[@class='popup-title small']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:48.482" endtime="20211213 10:14:48.510"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.481" endtime="20211213 10:14:48.510"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextThirdRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.535" level="INFO">Element 'xpath=//div[@class='popup-text']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:48.511" endtime="20211213 10:14:48.535"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.511" endtime="20211213 10:14:48.535"></status>
+</kw>
+<kw name="When User enter &quot;&quot; to ${epostaAdresiTextbox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:48.536" endtime="20211213 10:14:48.571"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.572" level="INFO">Typing text '' into text field 'xpath=//input[@placeholder='E-posta adresiniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:48.572" endtime="20211213 10:14:48.624"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.535" endtime="20211213 10:14:48.624"></status>
+</kw>
+<kw name="And User click ${ÅŸifreHatÄ±rlatmaButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:48.625" endtime="20211213 10:14:48.638"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.638" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:48.638" endtime="20211213 10:14:48.683"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.625" endtime="20211213 10:14:48.683"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFifthRow} on Page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.708" level="INFO">Element 'xpath=//div[@class='form-error']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:48.684" endtime="20211213 10:14:48.709"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.684" endtime="20211213 10:14:48.709"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:48.709" endtime="20211213 10:14:48.765"></status>
+</kw>
+<doc>User succesfully open Password reset page, if User does not fill in this field true, User must be get the error LÃ¼tfen geÃ§erli bir e-posta adresi girin.</doc>
+<tags>
+<tag>LoginPage MandatoryControl Critical</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:46.629" endtime="20211213 10:14:48.765" critical="yes"></status>
+</test>
+<test id="s1-t22" name="Åžifre sÄ±fÄ±rlama yerinde E-posta adresinin mail kalÄ±bÄ±na uymayan bir giriÅŸ yapÄ±lmasÄ±">
+<kw name="Given User Go To One Messaging Page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:48.767" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:48.767" endtime="20211213 10:14:50.223"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:50.223" endtime="20211213 10:14:50.330"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:50.331" endtime="20211213 10:14:50.332"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:48.766" endtime="20211213 10:14:50.332"></status>
+</kw>
+<kw name="When User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:50.333" endtime="20211213 10:14:50.350"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.351" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:50.350" endtime="20211213 10:14:50.501"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.333" endtime="20211213 10:14:50.501"></status>
+</kw>
+<kw name="And User click ${ForgotPassword} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:50.502" endtime="20211213 10:14:50.516"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.516" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211213 10:14:50.516" endtime="20211213 10:14:50.583"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.501" endtime="20211213 10:14:50.583"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFirstRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.613" level="INFO">Element 'xpath=//div[@class='popup-title']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:50.584" endtime="20211213 10:14:50.613"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.584" endtime="20211213 10:14:50.614"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextSecondRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.640" level="INFO">Element 'xpath=//div[@class='popup-title small']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:50.614" endtime="20211213 10:14:50.640"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.614" endtime="20211213 10:14:50.640"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextThirdRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.664" level="INFO">Element 'xpath=//div[@class='popup-text']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:50.641" endtime="20211213 10:14:50.664"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.641" endtime="20211213 10:14:50.664"></status>
+</kw>
+<kw name="When User enter &quot;adminvodafone.com&quot; to ${epostaAdresiTextbox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:50.665" endtime="20211213 10:14:50.700"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.701" level="INFO">Typing text 'adminvodafone.com' into text field 'xpath=//input[@placeholder='E-posta adresiniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:50.701" endtime="20211213 10:14:50.803"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.664" endtime="20211213 10:14:50.803"></status>
+</kw>
+<kw name="And User click ${ÅŸifreHatÄ±rlatmaButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:50.804" endtime="20211213 10:14:50.818"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.819" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:50.818" endtime="20211213 10:14:50.866"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.804" endtime="20211213 10:14:50.867"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFifthRow} on Page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.892" level="INFO">Element 'xpath=//div[@class='form-error']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:50.868" endtime="20211213 10:14:50.892"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.867" endtime="20211213 10:14:50.892"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:50.892" endtime="20211213 10:14:50.947"></status>
+</kw>
+<doc>User succesfully open Password reset page, if User does fill in this field out of pattern mail adrress, User must be get the error LÃ¼tfen geÃ§erli bir e-posta adresi girin.</doc>
+<tags>
+<tag>LoginPage MandatoryControl Critical</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:48.765" endtime="20211213 10:14:50.948" critical="yes"></status>
+</test>
+<test id="s1-t23" name="Åžifre sÄ±fÄ±rlama yerinde E-posta adresinin geÃ§erli bir mail adresi girilmiÅŸ olmasÄ±">
+<kw name="Given User Go To One Messaging Page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:50.950" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:50.950" endtime="20211213 10:14:52.340"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:52.341" endtime="20211213 10:14:52.446"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:52.446" endtime="20211213 10:14:52.448"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:50.949" endtime="20211213 10:14:52.448"></status>
+</kw>
+<kw name="When User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:52.449" endtime="20211213 10:14:52.466"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.466" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:52.466" endtime="20211213 10:14:52.616"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.448" endtime="20211213 10:14:52.616"></status>
+</kw>
+<kw name="And User click ${ForgotPassword} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:52.617" endtime="20211213 10:14:52.630"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.630" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211213 10:14:52.630" endtime="20211213 10:14:52.699"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.616" endtime="20211213 10:14:52.699"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFirstRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.728" level="INFO">Element 'xpath=//div[@class='popup-title']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:52.700" endtime="20211213 10:14:52.728"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.699" endtime="20211213 10:14:52.729"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextSecondRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.755" level="INFO">Element 'xpath=//div[@class='popup-title small']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:52.729" endtime="20211213 10:14:52.755"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.729" endtime="20211213 10:14:52.755"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextThirdRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.778" level="INFO">Element 'xpath=//div[@class='popup-text']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:52.756" endtime="20211213 10:14:52.778"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.755" endtime="20211213 10:14:52.778"></status>
+</kw>
+<kw name="When User enter &quot;sales@admin.com&quot; to ${epostaAdresiTextbox} textbox" library="BaseSteps">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:52.779" endtime="20211213 10:14:52.812"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>${InputText}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.813" level="INFO">Typing text 'sales@admin.com' into text field 'xpath=//input[@placeholder='E-posta adresiniz']'.</msg>
+<status status="PASS" starttime="20211213 10:14:52.813" endtime="20211213 10:14:52.906"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.779" endtime="20211213 10:14:52.906"></status>
+</kw>
+<kw name="And User click ${ÅŸifreHatÄ±rlatmaButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:52.907" endtime="20211213 10:14:52.919"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:52.920" level="INFO">Clicking element 'xpath=//a[@class='btn primary']'.</msg>
+<status status="PASS" starttime="20211213 10:14:52.919" endtime="20211213 10:14:52.969"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:52.907" endtime="20211213 10:14:52.969"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:52.970" endtime="20211213 10:14:53.025"></status>
+</kw>
+<doc>User succesfully open Password reset page, if User does fill in this field true, User should be mailed.</doc>
+<tags>
+<tag>LoginPage MandatoryControl Critical</tag>
+</tags>
+<status status="PASS" starttime="20211213 10:14:50.948" endtime="20211213 10:14:53.025" critical="yes"></status>
+</test>
+<test id="s1-t24" name="Åžifre sÄ±fÄ±rlama yerinde geri butonuna tÄ±klanmasÄ±">
+<kw name="Given User Go To One Messaging Page" library="HomePageSteps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:53.028" level="INFO">Opening browser 'headlesschrome' to base url 'http://onemessaging-ui-omsg-for-tests.apps.mbt.vodafone.local/'.</msg>
+<status status="PASS" starttime="20211213 10:14:53.027" endtime="20211213 10:14:54.421"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211213 10:14:54.422" endtime="20211213 10:14:54.527"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:54.527" endtime="20211213 10:14:54.529"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:53.027" endtime="20211213 10:14:54.529"></status>
+</kw>
+<kw name="When User click ${GirisYapButton} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:54.530" endtime="20211213 10:14:54.547"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.548" level="INFO">Clicking element 'xpath=//*[@id="menu-login"]'.</msg>
+<status status="PASS" starttime="20211213 10:14:54.547" endtime="20211213 10:14:54.685"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.529" endtime="20211213 10:14:54.685"></status>
+</kw>
+<kw name="And User click ${ForgotPassword} element" library="BaseSteps">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+<arg>15</arg>
+</arguments>
+<status status="PASS" starttime="20211213 10:14:54.686" endtime="20211213 10:14:54.703"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.704" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20211213 10:14:54.703" endtime="20211213 10:14:54.765"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.686" endtime="20211213 10:14:54.765"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextFirstRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.794" level="INFO">Element 'xpath=//div[@class='popup-title']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:54.766" endtime="20211213 10:14:54.794"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.765" endtime="20211213 10:14:54.795"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextSecondRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.821" level="INFO">Element 'xpath=//div[@class='popup-title small']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:54.795" endtime="20211213 10:14:54.821"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.795" endtime="20211213 10:14:54.822"></status>
+</kw>
+<kw name="Then User must able to see ${passForgotTextThirdRow} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.845" level="INFO">Element 'xpath=//div[@class='popup-text']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:54.822" endtime="20211213 10:14:54.845"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.822" endtime="20211213 10:14:54.845"></status>
+</kw>
+<kw name="Then User must able to see ${ÅŸifreHatÄ±rlatmaButton} on page" library="BaseSteps">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${ElementId}</arg>
+</arguments>
+<msg timestamp="20211213 10:14:54.869" level="INFO">Element 'xpath=//a[@class='btn primary']' is displayed.</msg>
+<status status="PASS" starttime="20211213 10:14:54.846" endtime="20211213 10:14:54.869"></status>
+</kw>
+<status status="PASS" starttime="20211213 10:14:54.846" endtime="20211213 10:14:54.869"></status>
+</kw>
+<kw name="And User click ${passForgotBackButton} element" library="BaseSteps">
+<msg timestamp="20211213 10:14:54.870" level="FAIL">Variable '${passForgotBackButton}' not found.</msg>
+<status status="FAIL" starttime="20211213 10:14:54.869" endtime="20211213 10:14:54.870"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211213 10:14:54.871" endtime="20211213 10:14:54.926"></status>
+</kw>
+<doc>User succesfully open Password reset page, if User does close this page, User should be back to main menu.</doc>
+<tags>
+<tag>LoginPage Controls Critical</tag>
+</tags>
+<status status="FAIL" starttime="20211213 10:14:53.025" endtime="20211213 10:14:54.926" critical="yes">Variable '${passForgotBackButton}' not found.</status>
+</test>
+<status status="FAIL" starttime="20211213 10:13:39.302" endtime="20211213 10:14:54.929"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="16" fail="8">Critical Tests</stat>
+<stat pass="16" fail="8">All Tests</stat>
+</total>
+<tag>
+<stat pass="9" fail="6">Critical</stat>
+<stat pass="13" fail="7">HomePage</stat>
+<stat pass="0" fail="1">LoginPage Controls Critical</stat>
+<stat pass="3" fail="0">LoginPage MandatoryControl Critical</stat>
+<stat pass="2" fail="1">Major</stat>
+<stat pass="6" fail="1">MandatoryControl</stat>
+<stat pass="2" fail="0">Minor</stat>
+<stat pass="5" fail="4">ValidationControl</stat>
+</tag>
+<suite>
+<stat pass="16" fail="8" id="s1" name="LoginPage">LoginPage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211213 10:13:40.374" level="WARN">Multiple test cases with name 'One messaging page content control' executed in test suite 'LoginPage'.</msg>
+<msg timestamp="20211213 10:14:05.138" level="WARN">Multiple test cases with name 'User login in 3 times incorrectly, they should get the error message that the account is locked.' executed in test suite 'LoginPage'.</msg>
+<msg timestamp="20211213 10:14:16.301" level="WARN">Multiple test cases with name 'User login in 3 times incorrectly, they should get the error message that the account is locked.' executed in test suite 'LoginPage'.</msg>
+</errors>
+</robot>
